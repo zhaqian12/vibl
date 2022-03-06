@@ -20,6 +20,13 @@
 #define BL_OUTPUT_PIN 12
 #define BL_INPUT_BANK GPIOB
 #define BL_INPUT_PIN 13
+#elif defined(TESTER)
+#define VIAL_KEYBOARD_UID {0x23, 0x29, 0xE2, 0xBB, 0xC5, 0x85, 0x3D, 0x76}
+/* setup for bluepill */
+#define BL_OUTPUT_BANK GPIOB
+#define BL_OUTPUT_PIN 12
+#define BL_INPUT_BANK GPIOB
+#define BL_INPUT_PIN 13
 #else
 #error Unknown target
 #endif
